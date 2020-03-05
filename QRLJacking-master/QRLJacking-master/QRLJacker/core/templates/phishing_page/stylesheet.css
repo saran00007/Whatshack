@@ -1,0 +1,96 @@
+/*Fonts*/
+@font-face {
+    font-family:'Open Sans'; font-style:normal; font-weight:700;
+    src:local('Open Sans Bold'), local('OpenSans-Bold'), url(https://themes.googleusercontent.com/static/fonts/opensans/v6/k3k702ZOKiLJc3WVjuplzHhCUOGz7vYGh680lGh-uXM.woff) format('woff');}
+@font-face {
+    font-family:'Open Sans'; font-style:normal; font-weight:300;
+    src:local('Open Sans Light'), local('OpenSans-Light'), url(https://themes.googleusercontent.com/static/fonts/opensans/v6/DXI1ORHCpsQm3Vp6mXoaTXhCUOGz7vYGh680lGh-uXM.woff) format('woff');}
+@font-face {
+    font-family:'Open Sans'; font-style:normal; font-weight:600;
+    src:local('Open Sans Semibold'), local('OpenSans-Semibold'), url(https://themes.googleusercontent.com/static/fonts/opensans/v6/MTP_ySUJH_bn48VBG8sNSnhCUOGz7vYGh680lGh-uXM.woff) format('woff');}
+@font-face {
+    font-family:'Open Sans'; font-style:normal; font-weight:400;
+    src:local('Open Sans'), local('OpenSans'), url(https://themes.googleusercontent.com/static/fonts/opensans/v6/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');}
+
+/*Base*/
+.background{background: #f5f8f9;}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, section, summary, time, mark, audio, video {-webkit-font-smoothing: antialiased; margin: 0;padding: 0;border: 0;font-size: 100%;font-family: "Open Sans",sans-serif;}
+
+ul li{list-style:none;}
+
+/*Common*/
+.wrapper{width: 100%;overflow: hidden;}
+.wrapper .outer-container {width: 1100px;margin: 20px auto; border: 1px solid #DEEAEE;background: #fff; border-radius: 4px;-moz-border-radius: 4px;-webkit-border-radius: 4px; padding: 40px;}
+.wrapper h1{font-family: 'Open Sans', sans-serif;font-size: 30px;font-weight: 500;color: #333333; margin-bottom:20px}
+.wrapper h2{font-family: 'Open Sans', sans-serif;font-size: 16px;font-weight: 600;color: #666; margin-bottom:20px}
+.wrapper .clear{clear:both;}
+.wrapper a, .wrapper a:visited{color: #00B9F5 !important; text-decoration:none;}
+.wrapper p{font-size: 12px;font-weight: 400;line-height: 16px; margin-bottom: 18px; color:#333;}
+.wrapper .grey-bg{background-color:#F5F8F9;}
+.wrapper .content ul{margin-bottom:20px;}
+.wrapper .content ul li{ list-style: outside none disc; font-size: 12px;font-weight: 400;
+    line-height: 16px;
+    margin-left: 30px;
+    padding-left: 10px;}
+.wrapper .back-link{float: right;margin-bottom: 10px;}
+
+
+/*Inner-header*/
+.home-link{background: url(images.png) no-repeat -136px 0px; width: 24px; height: 25px;display: block; float: right;}
+
+.wrapper .inner-header{margin-bottom:25px;}
+.wrapper .inner-header h1{float:left;}
+
+.wrapper .inner-header ul li{float:right;}
+.wrapper .inner-header .search{border-right: 1px solid #E4E4E4; padding: 0 15px;}
+.wrapper .inner-header .search input[type="text"]{font-size:12px;border-radius: 0;border-bottom: 1px solid #ccc !important;border: none;width: 100%; padding:2px !important;box-sizing: border-box;outline: none;font-family: inherit;}
+
+.wrapper .inner-header .browse{float: right; margin-top: 2px;}
+.wrapper .inner-header .browse p{font-size: 11px;color: #333;float: left;line-height: 18px;margin-bottom: 0;padding: 0 5px 0 9px; margin-top:0 !important}
+.wrapper .inner-header .browse select{ width: 105px;height: auto;float: left;position: relative;margin-top: 0; font-size: 12px; padding:0;}
+.wrapper .inner-header .rss{padding: 5px 5px 1px 9px; _padding: 8px 5px 5px 9px; margin-left: 9px; border-left: 1px solid #E4E4E4;float: right;position: relative;}
+.wrapper .inner-header .rss a{background: #002E6E;padding: 3px;font-size: 10px;color: #fff; border-radius: 2px;-moz-border-radius: 2px;-webkit-border-radius: 2px;}
+
+/*Release*/
+.wrapper .title{font-weight:600;border-bottom: 1px solid #DEEAEE;font-size: 14px; padding-bottom: 5px;margin-bottom: 10px;padding-top: 18px;clear: both; color:#222; clear:both}
+.wrapper ul.release{width:90%;font-size: 12px;padding:0; clear:both; line-height: 25px;}
+.wrapper ul.release li{float:left; display:block}
+.wrapper ul.release li:last-child{width:85%;}
+.wrapper ul.release li:first-child{width:100px;}
+.wrapper .ml100{margin-left:100px;}
+
+
+/*Search result*/
+.wrapper .search-result article{font-size:12px; padding:10px}
+.wrapper .search-result a:hover{text-decoration:underline;}
+
+/*Footer*/
+	.wrapper .footer, .wrapper .footer-bottom{display:none;}
+
+@media screen and (max-width: 768px) {
+	.wrapper .outer-container{width:80%; padding:10px 5%;}
+	.wrapper ul.releases dd, .wrapper ul.releases dt{width:100%}
+	.wrapper ul.releases dt{margin-top:10px;}
+	.wrapper .inner-header .browse, .wrapper .inner-header ul li, .wrapper .inner-header .rss{float:none; border:none !important;}
+	.wrapper .inner-header .browse select{background: #fff;border: none;border-radius: 0; border-bottom: 1px solid #ccc !important; width: 93%; margin-left:3%}
+	.wrapper .inner-header .browse p, .wrapper .inner-header .search input[type="text"]{font-size:12px;}
+	.wrapper ul.releases dd a{padding:0;}
+	.wrapper ul.releases dt{    margin-top: 10px; margin-bottom: 0;}
+	.wrapper .inner-header .browse p{width:90%;}
+	.wrapper .inner-header .search input[type="text"]{    margin-top: 15px;}
+	.wrapper .inner-header .rss{float:right;}
+	.wrapper .ml100{margin-left:0px;}
+	.wrapper h1{font-family: 'Open Sans', sans-serif;font-size: 20px;}
+	.wrapper h2{font-family: 'Open Sans', sans-serif;font-size: 16px;}
+	
+	/*Footer*/
+	.wrapper .footer{background:#002E6E; color:#fff; font-size:11px; font-weight:400; padding:5px; margin-top: 20px; display:block;}
+	.wrapper .footer ul li a{color:#fff !important;}
+	.wrapper .footer ul li{float:left; padding:0 2%;}
+	.wrapper .footer-bottom{background:#fff;  padding:5px 2%; text-align:center; display:block}
+	.wrapper .footer-bottom p{color:#000; font-size: 11px;font-weight: 400;}
+	.wrapper .footer-bottom ul li{ display:inline-block; }
+	.wrapper .footer-bottom .visa {background: url(images.png) no-repeat -93px -3px;width: 55px; height:25px;}
+	.wrapper .footer-bottom .master{background: url(images.png) no-repeat 5px -3px;width: 55px; height:25px}
+	.wrapper .footer-bottom .pci{background: url(images.png) no-repeat -46px -3px;width: 50px; height:25px}
+}
